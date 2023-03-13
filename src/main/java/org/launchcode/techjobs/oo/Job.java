@@ -87,6 +87,7 @@ public class Job {
     @Override
     public String toString(){
 
+        return "\n";
     }
 
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
