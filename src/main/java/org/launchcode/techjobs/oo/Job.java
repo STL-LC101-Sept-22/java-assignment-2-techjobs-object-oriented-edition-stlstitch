@@ -3,6 +3,9 @@ package org.launchcode.techjobs.oo;
 import java.util.Objects;
 
 public class Job {
+    public int getId() {
+        return id;
+    }
 
     private int id;
     private static int nextId = 1;
@@ -79,6 +82,11 @@ public class Job {
 
     public void setCoreCompetency(CoreCompetency coreCompetency) {
         this.coreCompetency = coreCompetency;
+    }
+
+    @Override
+    public String toString(){
+
     }
 
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
