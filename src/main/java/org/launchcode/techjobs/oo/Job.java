@@ -87,42 +87,11 @@ public class Job {
     @Override
     public String toString(){
 
-        String aName;
-        String aEmployer;
-        String aLocation;
-        String aPositionType;
-        String aCoreCompetency;
-
-        if (getName() == null) {
-            aName = "Data not available";
-        } else {
-            aName = getName();
-        }
-
-        if (employer == null || employer.getValue() == "") {
-            aEmployer = "Data not available";
-        } else {
-            aEmployer = employer.getValue();
-        }
-
-        if (location == null || location.getValue() == "") {
-            aLocation = "Data not available";
-        } else {
-            aLocation = location.getValue();
-        }
-
-        if (positionType == null || positionType.getValue() == "") {
-            aPositionType = "Data not available";
-        } else {
-            aPositionType = positionType.getValue();
-        }
-
-        if (coreCompetency == null || coreCompetency.getValue() == "") {
-            aCoreCompetency = "Data not available";
-        } else {
-            aCoreCompetency = coreCompetency.getValue();
-        }
-
+        String aName = (getName() == null) ? "Data not available" : getName();
+        String aEmployer = (employer == null || employer.getValue() == "") ? "Data not available" : employer.getValue();
+        String aLocation = (location == null || location.getValue() == "") ? "Data not available" : location.getValue();
+        String aPositionType = (positionType == null || positionType.getValue() == "") ? "Data not available" : positionType.getValue();
+        String aCoreCompetency = (coreCompetency == null || coreCompetency.getValue() == "") ? "Data not available" : coreCompetency.getValue();
 
         return "\n ID: " + getId() + "\n" +
                 "Name: " + aName + "\n" +
@@ -130,8 +99,6 @@ public class Job {
                 "Location: " + aLocation + "\n" +
                 "Position Type: " + aPositionType + "\n" +
                 "Core Competency: " + aCoreCompetency + "\n";
-
-
     }
 
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
