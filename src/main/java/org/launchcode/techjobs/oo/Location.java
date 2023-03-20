@@ -2,9 +2,9 @@ package org.launchcode.techjobs.oo;
 
 public class Location extends JobField {
 
-    public Location(String location) {
+    public Location(String Location) {
         String JobField;
-        JobField = location;
+        JobField = Location;
     }
 
     @Override
