@@ -5,9 +5,9 @@ import java.util.Objects;
 
 public class PositionType extends JobField {
 
-    public PositionType(String positionType) {
+    public PositionType(String PositionType) {
         String JobField;
-        JobField = positionType;
+        JobField = PositionType;
     }
 
     @Override

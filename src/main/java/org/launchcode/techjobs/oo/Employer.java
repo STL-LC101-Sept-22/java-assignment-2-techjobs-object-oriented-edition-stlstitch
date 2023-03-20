@@ -3,9 +3,9 @@ package org.launchcode.techjobs.oo;
 import java.util.Objects;
 
 public class Employer extends JobField {
-    public Employer(String employer) {
+    public Employer(String Employer) {
         String JobField;
-        JobField = employer;
+        JobField = Employer;
     }
 
     @Override

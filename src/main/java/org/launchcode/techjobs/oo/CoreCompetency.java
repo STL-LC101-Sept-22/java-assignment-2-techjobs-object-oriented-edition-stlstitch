@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public class CoreCompetency extends JobField {
 
-    public CoreCompetency(String coreCompetency) {
+    public CoreCompetency(String CoreCompetency) {
         String JobField;
-        JobField = coreCompetency;
+        JobField = CoreCompetency;
     }
 
     @Override
